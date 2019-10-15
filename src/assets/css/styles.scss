@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import "~font-awesome/css/font-awesome.css";
+@import 'reset';
+$bg-color: rgb(255, 255, 255);
+$bg-line-width: 1400px;
+$bg-line-height: 6px;
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.home-brif {
+  width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+
+  .home-brif-header {
+    background-color: #2196F3 !important;
+  }
+
+  .home-brif-title {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .home-brif-tab {
+    justify-content: left;
+    font-family: 'Roboto', sans-serif;
+    color: #e91e63 !important;
+    font-size: 16px;
+  }
+
+  .home-brif-icon {
+    color: #2196F3 !important;
+  }
+
+  .home-brif-tab-service {
+    justify-content: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #4caf50 !important;
+
+    .home-brif-icon-service {
+      color: #4caf50 !important;
+    }
+  }
+
+  .home-brif-item {
+    .home-brif-item-h1 {
+      font-size: 30px !important;
+      color: #e91e63 !important;
+    }
+
+    .form-title {
+      text-align: left;
+    }
+
+    .form-brif-title {
+      font-size: 30px !important;
+      color: #e91e63 !important;
+    }
+
+    .form-text-p {
+      text-align: left;
+    }
+  }
+}
+
+.theme--light.v-sheet {
+  color: #2196F3 !important;
+}
+
+.v-input--selection-controls {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.v-messages {
+  min-height: 1px !important;
+}
+
+.v-text-field {
+
+}
