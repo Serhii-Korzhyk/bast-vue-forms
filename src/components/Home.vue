@@ -41,25 +41,25 @@
         <LandingPage />
       </v-tab-item>
       <v-tab-item>
-        <SinglePage/>
+        <SinglePage />
       </v-tab-item>
       <v-tab-item>
-        <Business-Card-Website/>
+        <Business-Card-Website />
       </v-tab-item>
       <v-tab-item>
-        <CorporateWebsite/>
+        <CorporateWebsite />
       </v-tab-item>
       <v-tab-item>
-        <OnlineStore/>
+        <OnlineStore />
       </v-tab-item>
       <v-tab-item>
-        <UniqueSite/>
+        <UniqueSite />
       </v-tab-item>
       <v-tab-item>
-        <WebsitePromotion/>
+        <WebsitePromotion />
       </v-tab-item>
       <v-tab-item>
-        <Adwords/>
+        <Adwords />
       </v-tab-item>
     </v-tabs>
   </v-card>
@@ -81,16 +81,15 @@ import Adwords from './Adwords.vue'
 export default {
   name: 'Home',
   components: {
-  LandingPage,
-  SinglePage,
-  BusinessCardWebsite,
-  CorporateWebsite,
-  OnlineStore,
-  UniqueSite,
-  WebsitePromotion,
-  Adwords
-},
-
+    LandingPage,
+    SinglePage,
+    BusinessCardWebsite,
+    CorporateWebsite,
+    OnlineStore,
+    UniqueSite,
+    WebsitePromotion,
+    Adwords
+  },
 }
 </script>
 

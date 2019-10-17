@@ -1,10 +1,9 @@
 <template lang="html">
-
     <v-card flat>
       <v-card-text>
         <v-toolbar-title class="home-brif-item-h1">Бриф на создание Landing Page</v-toolbar-title>
-        <p>
-          Landing Page
+        <p class="home-brif-item-text">
+          Целевая страница — веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге
         </p>
         <v-form @submit.prevent="addBrif" class="home-brif-item-form">
           <v-container>
@@ -261,12 +260,12 @@
               </v-container>
             </v-col>
           </v-container>
-          <h2 v-show="isVisible"> Для отправки Брифа нажмите отправить</h2>
-          <h2 v-show="!isVisible">Бриф отправлен</h2>
-          <h2 v-show="!isVisible">Вернутсь на сайт</h2>
-          <v-btn v-if="count > 3" color="success" fab x-large dark v-bind:disabled="isButtonDisabled" v-show="isVisible" @click.once="addBrif; isVisible = !isVisible">
-            Add2
-          </v-btn>
+          <h2 v-show="isVisible" class="my-h2"> Для отправки Брифа нажмите кнопку</h2>
+          <h2 v-show="!isVisible" class="my-h2-send">Бриф отправлен</h2>
+          <h2 v-show="!isVisible" class="my-h2-go-home"><a href="/">Вернутсь на сайт</a></h2>
+
+
+          <v-btn v-if="count > 3" block color="secondary" dark v-show="isVisible" @click.once="addBrif; isVisible = !isVisible">Отправить Бриф</v-btn>
         </v-form>
       </v-card-text>
     </v-card>
@@ -311,8 +310,8 @@ export default {
       availabilityPhotos: [],
     }
   },
-  computed:{
-    count: function(){
+  computed: {
+    count: function() {
       return (this.firstname.length), (this.company.length)
 
     }
@@ -325,5 +324,6 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
+
 </style>
